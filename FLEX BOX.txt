@@ -1,0 +1,74 @@
+FLEX BOX
+
+Container
+
+<div class="container">
+
+</<div>
+
+.container{
+	display: flex; (flexivel a nível de bloco)
+	display: inline-flex; (flexível em linha)
+	}
+	
+.container{
+	flex-direction: row; --> organiza em linha (VALOR PADRÃO)
+	flex-direction: row-reverse <-- organiza o sentido inverso
+
+}
+
+.container{
+	flex-direction: column; organiza para baixo
+	flex-direction: column-reverse; organiza para cima
+
+}		
+
+.container{
+	flex-wrap: nowrap; (distribue os elementos numa mesma linha de acordo com o espaço)
+	flex-wrap: wrap; (distribue os elementos de acordo como o espaço jogando os elementos numa linha abaixo)
+	flex-wrap: wrap-reverse; (distribue os elementos de baixo para cima)
+	
+}
+
+.container{
+	justify-content: (é responsável pelo alinhamento horizontal no eixo x)
+	justify-content: flex-start;
+	justify-content: flex-end;
+	justify-content: center;
+	justify-content: space-between;
+	justify-content: space-around;
+	justify-content: space-evenly;
+	
+}
+	
+.container{
+	align-items-items: (é responsável pelo alinhamento vertical no eixo y)
+	align-items-items: stretch;
+	align-items: flex-start;
+	align-items: flex-end;
+	align-items: center;
+	align-items: baseline;
+}
+
+.container{
+	align-content: flex-start;
+	align-content: flex-end;
+	align-content: center;
+	align-content: stretch;
+	align-content: space-between;
+	align-content: space-around;
+}
+
+.item{
+	order: <integer>;
+	flex-grow: <numero>;
+	flex-shrink: <numero>;
+	flex-basis: <length> auto;
+	flex: none| [<'flex-grow'> <'flex-shrink'>? || <'flex-basis'>] (permite declara os valores das 3 propriedades em ordem)
+}
+
+.item{
+	align-self: auto | flex-start | flex-end | center | baseline | stretch;
+}
+
+

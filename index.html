@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+</head>
+
+<style>
+
+	#content{
+		background: #e7eef5;
+		width: 100%;
+		/*height: 500px;*/
+		display: flex;
+		flex-direction: row;
+		/*flex-direction: column;*/
+		/*flex-direction: row-reverse;*/
+		/*flex-direction: column-reverse;*/
+		flex-wrap: wrap;
+		/*justify-content: flex-start;*/
+		/*justify-content: flex-end;*/
+		/*justify-content: center;*/
+		/*justify-content: space-between;*/
+		justify-content: space-around;
+		/*align-items: flex-start;*/
+		/*align-items: flex-end;*/
+		align-items: center;
+		/*align-items: stretch;*/
+		/*align-items: baseline;*/
+		/*align-content: center;*/
+		align-content: space-around;
+
+
+	}
+
+	.item{
+		/*flex: 0 1 auto;*/
+		flex-grow:0;
+		flex-shrink:1;
+		flex-basis:120px; /*auto*/
+		height: 100px;
+		width: 100px;
+		color: black;
+		-webkit-box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.24);
+		background: white;
+		margin:10px;
+	}
+
+	.item:nth-child(1){
+		flex-grow: 1;
+	}
+
+
+	/*.item:nth-child(1){
+		order: 8;
+	}
+
+	.item:nth-child(2){
+		order: 7;
+	}
+
+	.item:nth-child(3){
+		order: 6;
+	}
+
+	.item:nth-child(4){
+		order: 5;
+	}
+
+	.item:nth-child(5){
+		order: 4;
+	}
+
+	.item:nth-child(6){
+		order: 3;
+	}
+
+	.item:nth-child(7){
+		order: 2;
+	}
+
+	.item:nth-child(8){
+		order: 1;
+	}
+
+</style>
+
+<header>	
+</header>
+
+<body>
+	<section id="content">
+		<article class="item">01</article>
+		<article class="item">02</article>
+		<article class="item">03</article>
+		<article class="item">04</article>
+		<article class="item">05</article>
+		<article class="item">06</article>
+		<article class="item">07</article>
+		<article class="item">08</article>		
+	</section>
+</body>
+
+</html>
